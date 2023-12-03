@@ -6,6 +6,7 @@
     <meta name="description" content="The Best Barbershop in Your City" />
     <meta name="key_words" content="hair, haircuts, beard, barbershop, man" />
     <title>BarberShop</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Hero section -->
@@ -22,6 +23,7 @@
           <ul>
             <li>
               <a
+                class="social-media-link"
                 href="https:www.youtube.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -30,6 +32,7 @@
             </li>
             <li>
               <a
+                class="social-media-link"
                 href="https:www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -42,21 +45,27 @@
       </div>
 
       <!-- Hero content -->
-      <div>
+      <div class="hero-content">
         <!-- Header-->
         <header>
           <nav>
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#prices">Services and Prices</a></li>
-              <li><a href="#barbers">Barbers</a></li>
-              <li><a href="#contacts">Contacts</a></li>
+              <li><a class="nav-about" href="#about">About</a></li>
+              <li>
+                <a class="nav-link" href="#prices">Services and Prices</a>
+              </li>
+              <li><a class="nav-link" href="#barbers">Barbers</a></li>
+              <li><a class="nav-link" href="#contacts">Contacts</a></li>
             </ul>
             <div>
               <address>
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
+                <a class="address-phone-number" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
               </address>
-              <button type="button">book a Service</button>
+              <button class="book-service-button" type="button">
+                book a Service
+              </button>
             </div>
           </nav>
         </header>
@@ -301,6 +310,16 @@
           <a href="tel:+380441111111">+38 044 111 11 11</a> <br />
           <a href="mailto:barbershop@email.com">barbershop@email.com</a>
         </address>
+        <div>
+          <div>
+            <img src="images/devider.svg" alt="-" />
+            <h3>Working hours</h3>
+          </div>
+          <p>
+            Daily from <time datetime="9:00AM">9:00 AM</time>till
+            <time datetime="22:00PM">22:00 PM</time>
+          </p>
+        </div>
       </section>
     </main>
 
