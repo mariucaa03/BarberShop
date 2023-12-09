@@ -8,6 +8,16 @@
   --header-font-family: "Raleway", sans-serif;
 }
 /* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
   font-family: var(--text-fond-family);
 }
@@ -21,6 +31,11 @@ ul {
 }
 
 /* Classes */
+
+.hero {
+  width: 1280px;
+  height: 680px;
+}
 
 .social-media-link {
   color: var(--black-color);
@@ -72,7 +87,9 @@ ul {
 
 .book-service-button {
   background: none;
-  border-color: var(--brand-color);
+  border-radius: 25px;
+  border: 1px solid var(--brand-color);
+  padding: 12px 24px;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -92,7 +109,8 @@ ul {
 
 .book-service-button:hover,
 .book-service-button:focus {
-  color: var(--brand-color);
+  color: var(--white-color);
+  background-color: var(--brand-color);
 }
 
 .subtitle {
@@ -126,7 +144,6 @@ ul {
   font-family: var(--header-font-family);
   font-size: 42px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   letter-spacing: 2.1px;
 }
@@ -169,4 +186,16 @@ ul {
   font-size: 14px;
   line-height: 185.714%;
   letter-spacing: 0.28px;
+}
+
+.services-and-prices-content {
+  /* TODO: replace with image bakground */
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.contacts {
+  /* TODO: replace with image bakground */
+  background-color: var(--black-color);
+  color: var(--white-color);
 }

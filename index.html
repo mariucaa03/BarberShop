@@ -6,6 +6,14 @@
     <meta name="description" content="The Best Barbershop in Your City" />
     <meta name="key_words" content="hair, haircuts, beard, barbershop, man" />
     <title>BarberShop</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +24,12 @@
   </head>
   <body>
     <!-- Hero section -->
-    <section>
+    <section class="hero">
       <!-- Sidebar -->
       <div>
         <!-- Logo -->
         <a href="index.html">
-          <img src="images/logo.png" alt="logo" />
+          <img src="./images/logo.svg" alt="logo" />
         </a>
 
         <!-- Social media links -->
@@ -160,8 +168,9 @@
       </section>
 
       <!-- Services and prices section -->
-      <sectionn id="prices">
+      <section id="prices" class="services-and-prices-content">
         <!-- Subtitle -->
+
         <div>
           <img src="./images/devider.svg" alt="-" />
           <h3 class="subtitle subtitle-light">
@@ -208,8 +217,13 @@
             </li>
           </ul>
         </div>
-        <button type="button">book a Service</button>
-      </sectionn>
+        <button
+          class="book-service-button book-service-button-light"
+          type="button"
+        >
+          book a Service
+        </button>
+      </section>
 
       <!-- Why us section -->
       <section>
@@ -335,7 +349,7 @@
       </section>
 
       <!-- Contacts section -->
-      <section id="contacts">
+      <section id="contacts" class="contacts">
         <h2 class="header header-light">Contacts</h2>
         <address>
           <span>Main Street, 7A Kyiv, 08132</span> <br />
