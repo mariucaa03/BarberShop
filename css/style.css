@@ -38,6 +38,14 @@ ul {
   margin: auto;
 }
 
+.devider-light {
+  fill: var(--gray-color);
+}
+
+.devider-dark {
+  fill: var(--black-color);
+}
+
 .social-media-link {
   color: var(--black-color);
   font-size: 11px;
@@ -111,6 +119,7 @@ ul {
 .subtitle-container {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .subtitle {
@@ -164,10 +173,4 @@ ul {
 
 .why-us-card-shifted {
   margin-top: 30px;
-}
-
-.contacts {
-  /* TODO: replace with image bakground */
-  background-color: var(--black-color);
-  color: var(--white-color);
 }
