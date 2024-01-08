@@ -1,0 +1,12 @@
+.portfolio {
+  padding: 130px 55px;
+}
+
+.portfolio-images {
+  display: flex;
+  gap: 30px;
+}
+
+.portfolio-subtitle-container {
+  margin-bottom: 44px;
+}
