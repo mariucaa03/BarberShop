@@ -142,7 +142,6 @@ ul {
 .header {
   font-family: var(--header-font-family);
   font-size: 42px;
-  font-style: normal;
   line-height: normal;
   letter-spacing: 2.1px;
 }
