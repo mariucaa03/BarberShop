@@ -27,7 +27,10 @@
     <link rel="stylesheet" href="./css/services-and-prices-styles.css" />
     <link rel="stylesheet" href="./css/why-us-styles.css" />
     <link rel="stylesheet" href="./css/barbers-styles.css" />
+    <link rel="stylesheet" href="./css/portfolio-styles.css" />
     <link rel="stylesheet" href="./css/contact-styles.css" />
+    <link rel="stylesheet" href="./css/footer-styles.css" />
+    <link rel="stylesheet" href="[path/to/css/feathericon.min.css" />
   </head>
   <body>
     <div class="container">
@@ -425,9 +428,9 @@
         </section>
 
         <!-- Portofolio section -->
-        <section>
+        <section class="portfolio">
           <!-- Subtitle -->
-          <div class="subtitle-container">
+          <div class="subtitle-container portfolio-subtitle-container">
             <svg width="60" height="1" class="devider-dark">
               <use href="./images/icons.svg#devider" />
             </svg>
@@ -435,7 +438,7 @@
               In Latin, &quot;barba&quot; means &quot;beard&quot;
             </h3>
           </div>
-          <ul>
+          <ul class="portfolio-images">
             <li>
               <img
                 src="./images/portofolio-img-1.jpg"
@@ -471,62 +474,87 @@
           </ul>
         </section>
 
-        <!-- Contacts section -->
-        <section id="contacts" class="contacts">
-          <h2 class="header header-light">Contacts</h2>
-          <address>
-            <span class="contact-address">
-              <svg wight="24" height="24">
-                <use href="./images/icons.svg#map-pin" />
-              </svg>
-              Main Street, 7A Kyiv, 08132
-            </span>
-            <br />
-            <a href="tel:+380441111111">+38 044 111 11 11</a> <br />
-            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-          </address>
-          <div>
-            <div class="subtitle-container">
-              <svg width="60" height="1" class="devider-light">
-                <use href="./images/icons.svg#devider" />
-              </svg>
-              <h3>Working hours</h3>
+        <div class="contact-container">
+          <!-- Book Service -->
+          <section class="contact-book-service"></section>
+
+          <!-- Contacts section -->
+          <section id="contacts" class="contacts">
+            <h2 class="header header-light contacts-header">Contacts</h2>
+            <address>
+              <span class="contact-address">
+                <i class="contact-icon" data-feather="map-pin"></i>
+                Main Street, 7A
+                <br />Kyiv, 08132
+              </span>
+              <br />
+
+              <a class="contact-address" href="tel:+380441111111">
+                <i class="contact-icon" data-feather="phone"></i>+38 044 111 11
+                11</a
+              >
+              <br />
+
+              <a
+                class="contact-address contact-address-mail"
+                href="mailto:barbershop@email.com"
+              >
+                <i class="contact-icon" data-feather="mail"></i
+                >barbershop@email.com</a
+              >
+            </address>
+            <div>
+              <div class="subtitle-container working-hours-section">
+                <svg width="60" height="1" class="devider-light">
+                  <use href="./images/icons.svg#devider" />
+                </svg>
+                <h3 class="contact-working-hours">Working hours</h3>
+              </div>
+              <p class="working-hours">
+                Daily from <time datetime="9:00AM">9:00 AM</time> till
+                <time datetime="22:00PM">22:00 PM</time>
+              </p>
             </div>
-            <p>
-              Daily from <time datetime="9:00AM">9:00 AM</time>till
-              <time datetime="22:00PM">22:00 PM</time>
-            </p>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
       <!-- Footer -->
-      <footer>
+      <footer class="footer">
         <p>&copy;Copyright 2022</p>
         <div>
           <svg width="60" height="1" class="devider-dark">
             <use href="./images/icons.svg#devider" />
           </svg>
+
+          <ul>
+            <li>
+              <a
+                href="https:www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <a
+                href="https:www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a
-              href="https:www.youtube.com"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Youtube</a
-            >
-          </li>
-          <li>
-            <a
-              href="https:www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
-          </li>
-        </ul>
       </footer>
     </div>
+<<<<<<< Updated upstream
+=======
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+>>>>>>> Stashed changes
   </body>
 </html>
