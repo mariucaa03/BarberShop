@@ -501,7 +501,39 @@
 
         <div class="contact-container">
           <!-- Book Service -->
-          <section class="contact-book-service"></section>
+          <section class="contact-book-service">
+            <h2 class="header header-light contacts-header">Book a Service</h2>
+            <form action="" autocomplete="off" class="contact-form">
+              <div class="contact-form-input-group">
+                <input
+                  type="text"
+                  placeholder="Name*"
+                  required
+                  name="name"
+                  class="contact-form-element"
+                />
+                <input
+                  type="tel"
+                  placeholder="telephone*"
+                  required
+                  name="Telephone"
+                  class="contact-form-element"
+                />
+              </div>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                class="contact-form-element contact-form-element-textarea"
+              ></textarea>
+              <button
+                class="book-service-button book-service-button-light"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </section>
 
           <!-- Contacts section -->
           <section id="contacts" class="contacts">
@@ -546,22 +578,13 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p>&copy;Copyright 2022</p>
-        <div>
+        <p class="footer-copy">&copy;Copyright 2022</p>
+        <div class="footer-social-container">
           <svg width="60" height="1" class="devider-dark">
             <use href="./images/icons.svg#devider" />
           </svg>
 
-          <ul>
-            <li>
-              <a
-                class="social-media-link"
-                href="https:www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
+          <ul class="footer-social">
             <li>
               <a
                 class="social-media-link"
@@ -569,6 +592,15 @@
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="social-media-link"
+                href="https:www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Youtube</a
               >
             </li>
           </ul>
