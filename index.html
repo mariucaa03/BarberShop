@@ -501,7 +501,39 @@
 
         <div class="contact-container">
           <!-- Book Service -->
-          <section class="contact-book-service"></section>
+          <section class="contact-book-service">
+            <h2 class="header header-light contacts-header">Book a Service</h2>
+            <form action="" autocomplete="off" class="contact-form">
+              <div class="contact-form-input-group">
+                <input
+                  type="text"
+                  placeholder="Name*"
+                  required
+                  name="name"
+                  class="contact-form-element"
+                />
+                <input
+                  type="tel"
+                  placeholder="telephone*"
+                  required
+                  name="Telephone"
+                  class="contact-form-element"
+                />
+              </div>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                class="contact-form-element contact-form-element-textarea"
+              ></textarea>
+              <button
+                class="book-service-button book-service-button-light"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </section>
 
           <!-- Contacts section -->
           <section id="contacts" class="contacts">
