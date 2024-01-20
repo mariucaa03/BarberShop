@@ -9,8 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white-color);
-  height: 718px;
-  padding: 130px 55px;
+  /* padding: 130px 55px; */
 }
 
 .services-header {
@@ -19,7 +18,7 @@
 }
 
 .services-price-lists {
-  display: flex;
+  /* display: flex; */
   color: #9da4bd;
   font-size: 18px;
   font-weight: 400;
