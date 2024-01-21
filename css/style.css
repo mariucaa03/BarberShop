@@ -3,6 +3,10 @@
   --black-color: #303030;
   --white-color: #ffffff;
   --gray-color: rgba(157, 164, 189, 0.6);
+
+  --padding-vertical-global: 84px;
+  --padding-horizontal-global: 31px;
+
   --content-color: #555;
   --text-fond-family: "Open Sans", sans-serif;
   --header-font-family: "Raleway", sans-serif;
@@ -146,9 +150,9 @@ ul {
 
 .header {
   font-family: var(--header-font-family);
-  font-size: 42px;
+  font-size: 28px;
   line-height: normal;
-  letter-spacing: 2.1px;
+  letter-spacing: 1.4px;
 }
 
 .header-dark {
@@ -157,4 +161,22 @@ ul {
 
 .header-light {
   color: var(--white-color);
+}
+
+@media screen and (width>=768px) {
+  :root {
+    --padding-vertical-global: 100px;
+    --padding-horizontal-global: 39px;
+  }
+}
+
+@media screen and (width>=1158px) {
+  :root {
+    --padding-vertical-global: 130px;
+    --padding-horizontal-global: 55px;
+  }
+  .header {
+    font-size: 42px;
+    letter-spacing: 2.1px;
+  }
 }

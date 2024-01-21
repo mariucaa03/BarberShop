@@ -5,7 +5,7 @@
 .contact-book-service {
   background-color: #191c26;
   /* width: 55%; */
-  /* padding: 130px 40px 0 55px; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .contact-form {
@@ -67,7 +67,7 @@
   background-size: cover;
   color: var(--white-color);
   /* height: 644px; */
-  /* padding: 130px 100px; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .contacts-header {

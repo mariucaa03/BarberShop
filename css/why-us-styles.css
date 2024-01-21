@@ -1,6 +1,5 @@
 .why-us {
-  /* padding: 130px 155px; */
-  /* display: flex; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global); /* display: flex; */
   gap: 130px;
 }
 

@@ -36,7 +36,7 @@
 .hero-content-container {
   position: relative;
   z-index: 1;
-  /* padding: 40px 55px 40px 100px; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

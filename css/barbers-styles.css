@@ -1,7 +1,6 @@
 .barbers {
   background-color: #f7f7f7;
-  /* padding: 130px 55px; */
-}
+padding: var(--padding-vertical-global) var(--padding-horizontal-global);}
 
 .barbers-header {
   margin-top: 20px;
