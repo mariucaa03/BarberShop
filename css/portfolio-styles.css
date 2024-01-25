@@ -3,10 +3,24 @@
 }
 
 .portfolio-images {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .portfolio-subtitle-container {
   margin-bottom: 44px;
+}
+
+@media screen and (width>=1158px) {
+  .portfolio-images {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 30px;
+  }
 }

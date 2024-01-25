@@ -168,16 +168,18 @@
         <section id="about" class="about">
           <!-- About images -->
 
-          <img
-            src="./images/beard.jpg"
-            alt="Barber trims beard"
-            class="about-image"
-          />
-          <img
-            src="./images/haircut.jpg"
-            alt="Barber cuts hair"
-            class="about-image"
-          />
+          <div class="about-images-container">
+            <img
+              src="./images/beard.jpg"
+              alt="Barber trims beard"
+              class="about-image"
+            />
+            <img
+              src="./images/haircut.jpg"
+              alt="Barber cuts hair"
+              class="about-image"
+            />
+          </div>
 
           <!-- About content -->
           <div class="about-content">
@@ -298,7 +300,7 @@
               <p class="why-us-card-description">Gifts for Regular Customers</p>
             </li>
           </ul>
-          <div>
+          <div class="why-us-title-container">
             <!-- Subtitle -->
             <div class="subtitle-container">
               <svg width="60" height="1" class="devider-dark">
@@ -525,7 +527,7 @@
                 class="contact-form-element contact-form-element-textarea"
               ></textarea>
               <button
-                class="book-service-button book-service-button-light"
+                class="book-service-button book-service-button-light contact-submit-button"
                 type="submit"
               >
                 Send
@@ -536,39 +538,39 @@
           <!-- Contacts section -->
           <section id="contacts" class="contacts">
             <h2 class="header header-light contacts-header">Contacts</h2>
-            <address>
-              <span class="contact-address">
-                <i class="contact-icon" data-feather="map-pin"></i>
-                Main Street, 7A
-                <br />Kyiv, 08132
-              </span>
-              <br />
-
-              <a class="contact-address" href="tel:+380441111111">
-                <i class="contact-icon" data-feather="phone"></i>+38 044 111 11
-                11</a
-              >
-              <br />
-
-              <a
-                class="contact-address contact-address-mail"
-                href="mailto:barbershop@email.com"
-              >
-                <i class="contact-icon" data-feather="mail"></i
-                >barbershop@email.com</a
-              >
-            </address>
-            <div>
-              <div class="subtitle-container working-hours-section">
-                <svg width="60" height="1" class="devider-light">
-                  <use href="./images/icons.svg#devider" />
-                </svg>
-                <h3 class="contact-working-hours">Working hours</h3>
+            <div class="contacts-information-container">
+              <address>
+                <span class="contact-address">
+                  <i class="contact-icon" data-feather="map-pin"></i>
+                  Main Street, 7A
+                  <br />Kyiv, 08132
+                </span>
+                <br />
+                <a class="contact-address" href="tel:+380441111111">
+                  <i class="contact-icon" data-feather="phone"></i>+38 044 111
+                  11 11</a
+                >
+                <br />
+                <a
+                  class="contact-address contact-address-mail"
+                  href="mailto:barbershop@email.com"
+                >
+                  <i class="contact-icon" data-feather="mail"></i
+                  >barbershop@email.com</a
+                >
+              </address>
+              <div>
+                <div class="subtitle-container">
+                  <svg width="60" height="1" class="devider-light">
+                    <use href="./images/icons.svg#devider" />
+                  </svg>
+                  <h3 class="contact-working-hours">Working hours</h3>
+                </div>
+                <p class="working-hours">
+                  Daily from <time datetime="9:00AM">9:00 AM</time> till
+                  <time datetime="22:00PM">22:00 PM</time>
+                </p>
               </div>
-              <p class="working-hours">
-                Daily from <time datetime="9:00AM">9:00 AM</time> till
-                <time datetime="22:00PM">22:00 PM</time>
-              </p>
             </div>
           </section>
         </div>

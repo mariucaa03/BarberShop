@@ -1,6 +1,7 @@
 .barbers {
   background-color: #f7f7f7;
-padding: var(--padding-vertical-global) var(--padding-horizontal-global);}
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+}
 
 .barbers-header {
   margin-top: 20px;
@@ -8,8 +9,11 @@ padding: var(--padding-vertical-global) var(--padding-horizontal-global);}
 }
 
 .barbers-list {
-  /* display: flex; */
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
 }
 
 .barbers-list-item {
@@ -57,4 +61,12 @@ padding: var(--padding-vertical-global) var(--padding-horizontal-global);}
 .barbers-social-media-icon:hover,
 .barbers-social-media-icon:active {
   fill: var(--brand-color);
+}
+
+@media screen and (width>=1158px) {
+  .barbers-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 }

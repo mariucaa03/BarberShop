@@ -1,10 +1,5 @@
-.contact-container {
-  /* display: flex; */
-}
-
 .contact-book-service {
   background-color: #191c26;
-  /* width: 55%; */
   padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
@@ -17,11 +12,16 @@
 
 .contact-form-input-group {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 44px;
 }
 
 .contact-form-input-group > * {
   flex-grow: 1;
+}
+
+.contact-submit-button {
+  margin: 0 auto;
 }
 
 .contact-form-element {
@@ -71,7 +71,15 @@
 }
 
 .contacts-header {
-  margin-bottom: 30px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.contacts-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 40px;
 }
 
 .contact-address {
@@ -105,10 +113,6 @@
   margin-bottom: 20px;
 }
 
-.working-hours-section {
-  margin-top: 70px;
-}
-
 .working-hours {
   color: #9da4bd;
   font-size: 18px;
@@ -116,4 +120,42 @@
   font-weight: 400;
   line-height: 166.667%;
   letter-spacing: 0.36px;
+}
+
+@media screen and (width>=768px) {
+  .contact-form-input-group {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .contact-submit-button {
+    margin: 0;
+  }
+
+  .contacts-information-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contacts-header {
+    margin: 0;
+  }
+}
+
+@media screen and (width>=1158px) {
+  .contact-container {
+    display: flex;
+  }
+
+  .contact-book-service {
+    flex-basis: 55%;
+  }
+  .contacts {
+    flex-grow: 1;
+  }
+
+  .contacts-information-container {
+    flex-direction: column;
+    justify-content: default;
+    gap: 70px;
+  }
 }

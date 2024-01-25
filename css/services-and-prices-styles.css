@@ -20,7 +20,6 @@
 .services-price-lists {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 
-  /* display: flex; */
   color: #9da4bd;
   font-size: 14px;
   font-weight: 400;
@@ -31,7 +30,6 @@
 
 .services-prices-list {
   flex-grow: 1;
-  /* padding: 30px 40px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -39,13 +37,10 @@
 
 .service-price-list-1 {
   padding: 30px 40px 20px 40px;
-  /* background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%); */
 }
 
 .service-price-list-2 {
-  padding: 0 40px 20px 40px;
-
-  /* background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%); */
+  padding: 0 40px 30px 40px;
 }
 
 .services-price-list-item {
@@ -67,5 +62,22 @@
     font-size: 18px;
     line-height: 166.667%;
     letter-spacing: 0.36px;
+  }
+}
+
+@media screen and (width>=1158px) {
+  .services-price-lists {
+    display: flex;
+  }
+  .services-prices-list {
+    padding: 30px 40px;
+  }
+
+  .service-price-list-1 {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  .service-price-list-2 {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
