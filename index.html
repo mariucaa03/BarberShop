@@ -99,28 +99,45 @@
           <div class="hero-content-container">
             <!-- Header-->
             <header class="hero-header">
-              <nav class="hero-navbar">
-                <ul class="hero-navbar-list">
-                  <li><a class="nav-link" href="#about">About</a></li>
-                  <li>
-                    <a class="nav-link" href="#prices">Services and Prices</a>
-                  </li>
-                  <li><a class="nav-link" href="#barbers">Barbers</a></li>
-                  <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                </ul>
-              </nav>
-              <div class="hero-header-cta">
-                <address class="hero-header-address">
-                  <a class="address-phone-number" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </address>
-                <button
-                  class="book-service-button book-service-button-light"
-                  type="button"
-                >
-                  book a Service
+              <a href="index.html" class="hero-phone-logo">
+                <svg width="69" height="56">
+                  <use href="./images/icons.svg#logo" />
+                </svg>
+              </a>
+
+              <button
+                class="hero-navbar-menu-button hero-navbar-menu-button-light"
+                data-menu-open
+              >
+                <i data-feather="menu"></i>
+              </button>
+              <div class="hero-navbar-menu" data-menu>
+                <button class="hero-navbar-menu-button" data-menu-close>
+                  <i data-feather="x"></i>
                 </button>
+                <nav class="hero-navbar">
+                  <ul class="hero-navbar-list">
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li>
+                      <a class="nav-link" href="#prices">Services and Prices</a>
+                    </li>
+                    <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="hero-header-cta">
+                  <address class="hero-header-address">
+                    <a class="address-phone-number" href="tel:+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </address>
+                  <button
+                    class="book-service-button hero-book-service-button"
+                    type="button"
+                  >
+                    book a Service
+                  </button>
+                </div>
               </div>
             </header>
 
@@ -615,6 +632,7 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="./js/menu.js"></script>
     <script src="./js/index.js"></script>
 
     <script src="https://unpkg.com/feather-icons"></script>

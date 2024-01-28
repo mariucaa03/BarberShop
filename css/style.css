@@ -73,12 +73,12 @@ ul {
 }
 
 .nav-link {
-  color: var(--white-color);
-  font-size: 12px;
+  color: var(--black-color);
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.8px;
 }
 
 .nav-link:hover,
@@ -87,12 +87,12 @@ ul {
 }
 
 .address-phone-number {
-  color: var(--white-color);
-  font-size: 12px;
+  color: var(--black-color);
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
 }
 
@@ -183,5 +183,16 @@ ul {
   .header {
     font-size: 42px;
     letter-spacing: 2.1px;
+  }
+  .nav-link {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+
+  .address-phone-number {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.2px;
   }
 }
