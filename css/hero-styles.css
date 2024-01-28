@@ -96,14 +96,22 @@
   line-height: normal;
   letter-spacing: 1.1px;
   cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 60px;
+  padding-bottom: 8px;
 }
 
 .hero-control-button-dark {
   color: var(--gray-color);
+  border-bottom: 1px solid var(--gray-color);
+  text-align: start;
 }
 
 .hero-control-button-light {
   color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+  text-align: end;
 }
 .hero-phone-logo {
   fill: white;
