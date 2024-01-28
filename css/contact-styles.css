@@ -159,3 +159,16 @@
     gap: 70px;
   }
 }
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts {
+    background-image: linear-gradient(
+        var(--price-list-bg-color),
+        var(--price-list-bg-color)
+      ),
+      url("../images/contacts@2x.jpeg");
+  }
+}

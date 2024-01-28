@@ -70,6 +70,6 @@
     display: block;
     width: 330px;
     height: 445px;
-    /* object-fit: cover; */
+    object-fit: cover;
   }
 }
